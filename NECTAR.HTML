@@ -76,6 +76,7 @@
   </style>
 </head>
 <body>
+
   <h1>🌸 ¡Flores irresistibles para abejas! 🐝</h1>
   <p>Descubrí nuestra colección de flores ricas en néctar. ¡Atraen hasta a la abeja más exigente!</p>
 
@@ -98,11 +99,20 @@
     </div>
   </div>
 
-  <button class="button">¡Quiero más néctar!</button>
+  <button class="button" onclick="moveVideo()">¡Quiero más néctar!</button>
 
-  <div class="video-section">
+  <div id="video-container" class="video-section">
     <p>🌼 ¿Querés ver cómo se entusiasman las abejas? Mirá este video 🐝</p>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=xYfRKTGGiTZkhq3U&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe id="nectar-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=xYfRKTGGiTZkhq3U&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+
+  <script>
+    function moveVideo() {
+      const videoContainer = document.getElementById('video-container');
+      document.body.insertBefore(videoContainer, document.body.firstChild);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
 </html>
