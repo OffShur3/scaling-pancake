@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flores con Néctar</title>
+  <style>
+    body {
+      background: #fffbee;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #4d3a1f;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #f0a500;
+    }
+
+    .flowers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .flower {
+      background: #fffbec;
+      border: 2px solid #f0c36d;
+      border-radius: 20px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .flower:hover {
+      transform: scale(1.05);
+    }
+
+    .flower h2 {
+      font-size: 1.2rem;
+      color: #a45d00;
+    }
+
+    .flower p {
+      font-size: 0.95rem;
+    }
+
+    .button {
+      background: #ffd700;
+      color: #4d3a1f;
+      font-size: 1.2rem;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #f0a500;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 ¡Flores irresistibles para abejas! 🐝</h1>
+  <p>Descubrí nuestra colección de flores ricas en néctar. ¡Atraen hasta a la abeja más exigente!</p>
+
+  <div class="flowers">
+    <div class="flower">
+      <h2>Lavanda</h2>
+      <p>Su aroma y color violáceo son puro amor para las abejas.</p>
+    </div>
+    <div class="flower">
+      <h2>Girasol</h2>
+      <p>Gigante, dorado y lleno de energía solar. Una delicia.</p>
+    </div>
+    <div class="flower">
+      <h2>Romero</h2>
+      <p>Pequeño pero potente. Su néctar es una joya.</p>
+    </div>
+    <div class="flower">
+      <h2>Margarita</h2>
+      <p>Sencilla, dulce y siempre abierta para una visita.</p>
+    </div>
+  </div>
+
+  <button class="button">¡Quiero más néctar!</button>
+</body>
+</html>
