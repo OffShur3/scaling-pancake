@@ -72,6 +72,13 @@
     iframe {
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transition: all 0.5s ease;
+    }
+
+    /* Clase para agrandar el video */
+    .fullscreen-video {
+      width: 90vw;
+      height: 80vh;
     }
   </style>
 </head>
@@ -99,17 +106,40 @@
     </div>
   </div>
 
-  <button class="button" onclick="moveVideo()">¡Quiero más néctar!</button>
+  <button class="button" onclick="expandAndPlay()">¡Quiero más néctar!</button>
 
   <div id="video-container" class="video-section">
     <p>🌼 ¿Querés ver cómo se entusiasman las abejas? Mirá este video 🐝</p>
-    <iframe id="nectar-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=xYfRKTGGiTZkhq3U&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe
+      id="nectar-video"
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
   </div>
 
   <script>
-    function moveVideo() {
+    function expandAndPlay() {
       const videoContainer = document.getElementById('video-container');
+      const iframe = document.getElementById('nectar-video');
+
+      // Cambiar la URL para agregar autoplay
+      const autoplayURL = "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0";
+
+      iframe.src = autoplayURL;
+
+      // Mover el video arriba del todo
       document.body.insertBefore(videoContainer, document.body.firstChild);
+
+      // Agrandar el iframe
+      iframe.classList.add('fullscreen-video');
+
+      // Hacer scroll suave hacia arriba
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
