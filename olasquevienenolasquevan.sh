@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "==============================================="
 echo "👤 Usuario actual:"
 whoami
