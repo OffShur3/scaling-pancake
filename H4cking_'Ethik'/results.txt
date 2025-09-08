@@ -1,0 +1,202 @@
+whatweb diosdelared.com
+whatweb diosdelared.com:8080
+whatweb diosdelared.com:8443
+whatweb diosdelared.com:8880
+
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/whatweb:37: warning: getoptlong was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add getoptlong to your Gemfile or gemspec to silence this warning.
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/lib/whatweb.rb:42: warning: base64 was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add base64 to your Gemfile or gemspec to silence this warning.
+/nix/store/d0vn98d54n190bmwyrz60k75aa1v6lb0-ruby3.3-bson-4.14.1/lib/ruby/gems/3.3.0/gems/bson-4.14.1/lib/bson.rb:76: warning: bigdecimal was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add bigdecimal to your Gemfile or gemspec to silence this warning.
+[1m[34mhttp://diosdelared.com[0m [301 Moved Permanently] [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m172.67.175.99[0m], [1mRedirectLocation[0m[[0m[22mhttps://diosdelared.com/[0m], [1mUncommonHeaders[0m[[0m[22mspeculation-rules,report-to,nel,cf-ray,alt-svc[0m]
+[1m[34mhttps://diosdelared.com/[0m [200 OK] [1mBootstrap[0m, [1mCookies[0m[[0m[22mPHPSESSID,target[0m], [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mEmail[0m[[0m[22memail@gmail.com[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mHttpOnly[0m[[0m[22mPHPSESSID[0m], [1mIP[0m[[0m[22m172.67.175.99[0m], [1mJQuery[0m, [1mPasswordField[0m[[0m[22mpassword[0m], [1mScript[0m[[0m[22mtext/javascript[0m], [1mTitle[0m[[1m[33mDiosdelared Security 3.0 PRE-BETA[0m], [1mUncommonHeaders[0m[[0m[22mspeculation-rules,nel,report-to,cf-cache-status,cf-ray,alt-svc[0m], [1mX-UA-Compatible[0m[[0m[22mIE=Edge[0m]
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/whatweb:37: warning: getoptlong was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add getoptlong to your Gemfile or gemspec to silence this warning.
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/lib/whatweb.rb:42: warning: base64 was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add base64 to your Gemfile or gemspec to silence this warning.
+/nix/store/d0vn98d54n190bmwyrz60k75aa1v6lb0-ruby3.3-bson-4.14.1/lib/ruby/gems/3.3.0/gems/bson-4.14.1/lib/bson.rb:76: warning: bigdecimal was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add bigdecimal to your Gemfile or gemspec to silence this warning.
+[1m[34mhttp://diosdelared.com:8080[0m [301 Moved Permanently] [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m172.67.175.99[0m], [1mRedirectLocation[0m[[0m[22mhttps://diosdelared.com:8080/[0m], [1mUncommonHeaders[0m[[0m[22mspeculation-rules,report-to,nel,cf-ray,alt-svc[0m]
+[1m[31mERROR Opening: https://diosdelared.com:8080/ - SSL_connect returned=1 errno=0 peeraddr=104.21.17.86:8080 state=error: record layer failure[0m
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/whatweb:37: warning: getoptlong was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add getoptlong to your Gemfile or gemspec to silence this warning.
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/lib/whatweb.rb:42: warning: base64 was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add base64 to your Gemfile or gemspec to silence this warning.
+/nix/store/d0vn98d54n190bmwyrz60k75aa1v6lb0-ruby3.3-bson-4.14.1/lib/ruby/gems/3.3.0/gems/bson-4.14.1/lib/bson.rb:76: warning: bigdecimal was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add bigdecimal to your Gemfile or gemspec to silence this warning.
+[1m[34mhttp://diosdelared.com:8443[0m [400 Bad Request] [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m172.67.175.99[0m], [1mTitle[0m[[1m[33m400 The plain HTTP request was sent to HTTPS port[0m], [1mUncommonHeaders[0m[[0m[22mcf-ray[0m]
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=rbs version=3.4.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=racc version=1.7.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.9.2 platform=ruby> because it is missing extensions
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/whatweb:37: warning: getoptlong was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add getoptlong to your Gemfile or gemspec to silence this warning.
+/nix/store/zgsfssh5lgcnzn2x4cx205lbza6r6zkx-whatweb-0.5.5/share/whatweb/lib/whatweb.rb:42: warning: base64 was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add base64 to your Gemfile or gemspec to silence this warning.
+/nix/store/d0vn98d54n190bmwyrz60k75aa1v6lb0-ruby3.3-bson-4.14.1/lib/ruby/gems/3.3.0/gems/bson-4.14.1/lib/bson.rb:76: warning: bigdecimal was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.4.0.
+You can add bigdecimal to your Gemfile or gemspec to silence this warning.
+[1m[34mhttp://diosdelared.com:8880[0m [301 Moved Permanently] [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m172.67.175.99[0m], [1mRedirectLocation[0m[[0m[22mhttps://diosdelared.com:8880/[0m], [1mUncommonHeaders[0m[[0m[22mspeculation-rules,report-to,nel,cf-ray,alt-svc[0m]
+[1m[31mERROR Opening: https://diosdelared.com:8880/ - SSL_connect returned=1 errno=0 peeraddr=104.21.17.86:8880 state=error: record layer failure[0m
+curl -I http://diosdelared.com
+curl -I http://diosdelared.com:8080
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+HTTP/1.1 301 Moved Permanently
+Date: Wed, 03 Sep 2025 03:32:02 GMT
+Connection: keep-alive
+Location: https://diosdelared.com/
+Speculation-Rules: "/cdn-cgi/speculation"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5R%2BF%2BJzRMOAZUjPP2oVt72deiS9Q5iR%2FZegqo0X0As8Vi%2BkHnVWwEnfHK8g5B76CqJPfhdrdb2%2BI73x2R2XxRx7Wx2R0eLYhOxaw%2BdWVdfZIHdN%2BGD%2FaEYSSzw%3D%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: 97922d7a3bb81a73-EZE
+alt-svc: h3=":443"; ma=86400
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 301 Moved Permanently
+Date: Wed, 03 Sep 2025 03:32:03 GMT
+Connection: keep-alive
+Location: https://diosdelared.com:8080/
+Speculation-Rules: "/cdn-cgi/speculation"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BzF3BSKh5NXK1n7m7hkniyATI0R0Pner3cy6ixmvhpfeJKXfNEDmLZJbRbFHrfLxfMhs%2BRcxVE%2BhQNzuRZ4Co3Tw72z2Xt0Ti4M4m7LQkTwCxfQtVoaAR%2ByIjg%3D%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: 97922d807ac26ccb-EZE
+alt-svc: h3=":443"; ma=86400
+
+nmap -sV -sC -p 80,443,2052,2053,2082,2083,2086,2087,2095,8080,8443,8880 diosdelared.com
+
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-09-03 00:32 -0300
+Nmap scan report for diosdelared.com (172.67.175.99)
+Host is up (0.64s latency).
+Other addresses for diosdelared.com (not scanned): 2606:4700:3036::6815:1156 2606:4700:3035::ac43:af63 104.21.17.86
+
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://diosdelared.com/
+|_http-server-header: cloudflare
+| http-robots.txt: 1 disallowed entry 
+|_/
+443/tcp  open  ssl/http Cloudflare http proxy
+| ssl-cert: Subject: commonName=diosdelared.com
+| Subject Alternative Name: DNS:diosdelared.com, DNS:*.diosdelared.com
+| Not valid before: 2025-08-23T10:44:30
+|_Not valid after:  2025-11-21T11:41:58
+|_http-server-header: cloudflare
+|_http-title: Diosdelared Security 3.0 PRE-BETA
+| http-robots.txt: 1 disallowed entry 
+|_/
+2052/tcp open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://diosdelared.com:2052/
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: cloudflare
+2053/tcp open  ssl/http nginx
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=diosdelared.com
+| Subject Alternative Name: DNS:diosdelared.com, DNS:*.diosdelared.com
+| Not valid before: 2025-08-23T10:44:30
+|_Not valid after:  2025-11-21T11:41:58
+2082/tcp open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://diosdelared.com:2082/
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: cloudflare
+2083/tcp open  ssl/http nginx
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=diosdelared.com
+| Subject Alternative Name: DNS:diosdelared.com, DNS:*.diosdelared.com
+| Not valid before: 2025-08-23T10:44:30
+|_Not valid after:  2025-11-21T11:41:58
+2086/tcp open  http     Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Did not follow redirect to https://diosdelared.com:2086/
+| http-robots.txt: 1 disallowed entry 
+|_/
+2087/tcp open  ssl/http nginx
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=diosdelared.com
+| Subject Alternative Name: DNS:diosdelared.com, DNS:*.diosdelared.com
+| Not valid before: 2025-08-23T10:44:30
+|_Not valid after:  2025-11-21T11:41:58
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+2095/tcp open  http     Cloudflare http proxy
+|_http-server-header: cloudflare
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Did not follow redirect to https://diosdelared.com:2095/
+8080/tcp open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://diosdelared.com:8080/
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: cloudflare
+8443/tcp open  ssl/http Cloudflare http proxy
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: commonName=diosdelared.com
+| Subject Alternative Name: DNS:diosdelared.com, DNS:*.diosdelared.com
+| Not valid before: 2025-08-23T10:44:30
+|_Not valid after:  2025-11-21T11:41:58
+|_http-server-header: cloudflare
+8880/tcp open  http     Cloudflare http proxy
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: cloudflare
+|_http-title: Did not follow redirect to https://diosdelared.com:8880/
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 203.39 seconds
+
+for port in 2052 2053 2082 2083 2086 2087 2095; do
+    echo '=== Puerto  ==='
+    nc -nv diosdelared.com  -w 3
+    echo ''
+done
+
+=== Puerto 2052 ===
+nc: getaddrinfo for host "diosdelared.com" port 2052: Name or service not known
+
+=== Puerto 2053 ===
+nc: getaddrinfo for host "diosdelared.com" port 2053: Name or service not known
+
+=== Puerto 2082 ===
+nc: getaddrinfo for host "diosdelared.com" port 2082: Name or service not known
+
+=== Puerto 2083 ===
+nc: getaddrinfo for host "diosdelared.com" port 2083: Name or service not known
+
+=== Puerto 2086 ===
+nc: getaddrinfo for host "diosdelared.com" port 2086: Name or service not known
+
+=== Puerto 2087 ===
+nc: getaddrinfo for host "diosdelared.com" port 2087: Name or service not known
+
+=== Puerto 2095 ===
+nc: getaddrinfo for host "diosdelared.com" port 2095: Name or service not known
+

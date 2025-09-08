@@ -1,0 +1,8 @@
+ctf2.ddlr.org
+ctf.ddlr.org
+django.ddlr.org
+edu.ddlr.org
+img.ddlr.org
+machines.ddlr.org
+security.ddlr.org
+www.ddlr.org
