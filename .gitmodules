@@ -1,0 +1,3 @@
+[submodule "SecLists"]
+    path = H4cking_'Ethik'/dicts/SecLists
+    url = https://github.com/danielmiessler/SecLists.git
