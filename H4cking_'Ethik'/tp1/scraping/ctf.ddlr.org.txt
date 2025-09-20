@@ -1,3 +1,0 @@
-=============== Enlaces de https://ctf.ddlr.org ===============
-
-Error al acceder a la URL https://ctf.ddlr.org: 403 Client Error: Forbidden for url: https://ctf.ddlr.org/

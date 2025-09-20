@@ -1,7 +1,0 @@
-=============== Enlaces de https://django.ddlr.org ===============
-
-https://django.ddlr.org/blog/
-https://diosdelared.com
-https://www.youtube.com/watch?v=ZQjegyDF2Uk
-https://github.com/M20191
-https://discord.gg/diosdelared-1083868418735874108

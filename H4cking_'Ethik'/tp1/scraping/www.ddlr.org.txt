@@ -1,3 +1,0 @@
-=============== Enlaces de www.ddlr.org ===============
-
-Error al acceder a la URL www.ddlr.org: Invalid URL 'www.ddlr.org': No scheme supplied. Perhaps you meant https://www.ddlr.org?
