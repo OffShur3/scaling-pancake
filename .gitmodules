@@ -1,3 +1,6 @@
 [submodule "SecLists"]
     path = H4cking_'Ethik'/dicts/SecLists
     url = https://github.com/danielmiessler/SecLists.git
+[submodule "H4cking_'Ethik'/dicts/wordlists"]
+	path = H4cking_'Ethik'/dicts/wordlists
+	url = https://github.com/00xBAD/kali-wordlists.git
