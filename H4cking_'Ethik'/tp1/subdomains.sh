@@ -76,11 +76,11 @@ while IFS= read -r domain; do
     echo "Escaneando: $domain"
 
     # Construir la URL completa, asumiendo HTTP o HTTPS (se puede mejorar)
-    url="https://$domain"
+    url="$domain"
 
     # Ejecutar el comando gobuster y redirigir la salida al archivo
     # La opción -q (quiet) evita que gobuster imprima la barra de progreso
-    gobuster dir -u "$url" -w "$WORDLIST_FILE" -t 500 -q --status-codes-blacklist 404,403,301 >> "$OUTPUT_FILE"
+    gobuster dir -u "$url" -w "$WORDLIST_FILE" -t 50000 -q --status-codes-blacklist 404,403,301 >> "$OUTPUT_FILE"
 
     # Imprimir un separador para mayor claridad en el archivo de salida
     echo "------------------------------------------------------" >> "$OUTPUT_FILE"

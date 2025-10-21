@@ -1235,8 +1235,8 @@ ___________________________"
 
 
 while true; do
-#var1= "localhost"
-#var2= "4444"
+var1= "localhost"
+var2= "1337"
 clear
 if command -v figlet >/dev/null 2>&1; then
 	figlet "DDLR Security Toolkit" | lolcat

