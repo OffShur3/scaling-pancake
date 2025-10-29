@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Sun Oct 26 17:41:51 2025 as: /nix/store/03qnkw3hwdlkbf42rj1mfawzfdll2ndp-nmap-7.98/bin/nmap -p- --open -sS -min-rate 5000 -vvv -n -Pn -oG enum/allPorts 172.17.0.2
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 172.17.0.2 ()	Status: Up
+Host: 172.17.0.2 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 8080/open/tcp//http-proxy///	Ignored State: closed (65531)
+# Nmap done at Sun Oct 26 17:41:54 2025 -- 1 IP address (1 host up) scanned in 3.32 seconds
