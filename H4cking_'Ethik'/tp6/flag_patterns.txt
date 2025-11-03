@@ -1,0 +1,7 @@
+ddlr{
+password
+flag
+fl4g
+secret
+key
+credentials

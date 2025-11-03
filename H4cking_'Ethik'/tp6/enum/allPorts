@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Sat Nov  1 18:33:19 2025 as: /nix/store/03qnkw3hwdlkbf42rj1mfawzfdll2ndp-nmap-7.98/bin/nmap -p- --open -sS -min-rate 5000 -vvv -n -Pn -oG enum/allPorts 192.168.100.19
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.100.19 ()	Status: Up
+Host: 192.168.100.19 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65533)
+# Nmap done at Sat Nov  1 18:33:20 2025 -- 1 IP address (1 host up) scanned in 1.55 seconds

